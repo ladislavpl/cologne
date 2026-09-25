@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kolínský dóm - katedrála sv. Petra v Kolíně nad Rýnem. Historie, architektura, zajímavosti a praktické informace o nejnavštěvovanější památce Německa.">
+    <title>Kolínský dóm - Katedrála sv. Petra | Kolín nad Rýnem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER s navigací -->
+    <header id="header">
+        <div class="header-inner">
+            <h1>Kolínský dóm</h1>
+            <p class="subtitle">Katedrála sv. Petra v Kolíně nad Rýnem</p>
+            <nav id="hlavni-navigace">
+                <button id="menu-btn" aria-label="Otevřít menu">☰ Menu</button>
+                <ul id="nav-list">
+                    <li><a href="#uvod">Úvod</a></li>
+                    <li><a href="#historie">Historie</a></li>
+                    <li><a href="#architektura">Architektura</a></li>
+                    <li><a href="#zajimavosti">Zajímavosti</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#kviz">Kvíz</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HLAVNÍ OBSAH -->
+    <main>
+
+        <!-- ÚVOD - hero sekce -->
+        <section id="uvod" class="hero">
+            <div class="hero-overlay">
+                <h2>Nejnavštěvovanější památka Německa</h2>
+                <p>Kolínský dóm je gotická katedrála, jejíž stavba trvala přes 600 let. Dnes je symbolem města Kolína nad Rýnem a památkou zapsanou na seznamu UNESCO.</p>
+                <a href="#historie" class="btn">Zjistit více</a>
+            </div>
+        </section>
+
+        <!-- HISTORIE -->
+        <section id="historie">
+            <div class="container">
+                <h2>Historie katedrály</h2>
+                <div class="text-with-image">
+                    <article>
+                        <h3>Začátek stavby</h3>
+                        <p>Základní kámen současné katedrály byl položen <strong>15. srpna 1248</strong> arcibiskupem Konrádem z Hochstadenu. Stavba měla nahradit starší karolinský kostel, který byl zničen požárem. Hlavním důvodem stavby bylo vytvořit důstojné místo pro ostatky Tří králů, které do Kolína přivezl arcibiskup Rainald z Dasselu v roce 1164.</p>
+
+                        <h3>Přerušení a dokončení</h3>
+                        <p>Stavba katedrály probíhala ve dvou hlavních fázích. První fáze trvala od roku 1248 do roku 1473, kdy byly práce zastaveny kvůli nedostatku financí. Katedrála zůstala nedokončená více než 300 let - na jižní věži stál obří jeřáb, který se stal symbolem města.</p>
+                        <p>Teprve v 19. století, v době romantismu a národního nadšení, byla stavba obnovena. Dokončení katedrály v roce <strong>1880</strong> bylo slavnostní událostí za přítomnosti císaře Viléma I. V té době byl Kolínský dóm nejvyšší stavbou světa.</p>
+                    </article>
+                    <aside class="info-box">
+                        <h3>Základní údaje</h3>
+                        <ul>
+                            <li><strong>Zahájení stavby:</strong> 1248</li>
+                            <li><strong>Dokončení:</strong> 1880</li>
+                            <li><strong>Doba stavby:</strong> 632 let</li>
+                            <li><strong>Výška věží:</strong> 157,38 m</li>
+                            <li><strong>Délka:</strong> 144,58 m</li>
+                            <li><strong>Šířka:</strong> 86,25 m</li>
+                            <li><strong>UNESCO:</strong> od roku 1996</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARCHITEKTURA -->
+        <section id="architektura">
+            <div class="container">
+                <h2>Architektura</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Gotický styl</h3>
+                        <p>Kolínský dóm je ukázkou vrcholné gotické architektury. Charakteristické jsou lomené oblouky, žebrová klenba a opěrný systém, který umožňuje mít vysoké a tenké stěny s velkými okny.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Věže</h3>
+                        <p>Dvě mohutné věže na západním průčelí dosahují výšky 157 metrů. Až do roku 1884 byl dóm nejvyšší stavbou na světě. Na jižní věž je možné vystoupat po 533 schodech.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Vitráže</h3>
+                        <p>Katedrála má plochu oken přes 10 000 m². Nejstarší vitráže pocházejí ze 13. století. Nejnovější moderní okno od Gerharda Richtera z roku 2007 obsahuje 11 263 barevných čtverců.</p>
+                    </article>
+                </div>
+
+                <!-- Rozbalitelný detail -->
+                <div class="expandable">
+                    <button id="btn-vice-architektura" class="btn btn-outline">Zobrazit více o architektuře ▼</button>
+                    <div id="detail-architektura" class="hidden">
+                        <p>Interiér katedrály tvoří pětilodní bazilika s příčnou lodí a ochozem s věncem kaplí. Hlavní loď dosahuje výšky 43 metrů, což z ní dělá jednu z nejvyšších gotických katedrál. Celková zastavěná plocha katedrály činí přibližně 7 914 m².</p>
+                        <p>Na stavbu bylo použito převážně drachenfélského trachytu a později i obelidského bazaltu. Celková hmotnost katedrály se odhaduje na přibližně 300 000 tun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ZAJÍMAVOSTI -->
+        <section id="zajimavosti">
+            <div class="container">
+                <h2>Zajímavosti</h2>
+                <div class="text-with-image reverse">
+                    <article>
+                        <h3>Schrána Tří králů</h3>
+                        <p>Nejvýznamnějším pokladem katedrály je <strong>Schrána Tří králů</strong> (Dreikönigsschrein) - pozlacený relikviář z 12.-13. století, který údajně obsahuje ostatky biblických mudrců. Je to největší relikviář v Evropě a hlavní důvod, proč byla katedrála vůbec postavena.</p>
+
+                        <h3>Přežila druhou světovou válku</h3>
+                        <p>Během spojeneckého bombardování Kolína v letech 1942-1945 byla katedrála zasažena 14 leteckými pumami. I přes rozsáhlé poškození zůstala stát, zatímco okolní město bylo z 90 % zničeno. Opravy trvaly až do roku 1956.</p>
+
+                        <h3>Miliony návštěvníků</h3>
+                        <p>Kolínský dóm ročně navštíví přibližně <strong>6 milionů lidí</strong>, čímž je nejnavštěvovanější památkou v Německu. Vstup do katedrály je zdarma, za výstup na věž se platí vstupné.</p>
+                    </article>
+                    <div class="side-image">
+                        <img src="img/cathedral-shrine.jpg" alt="Schrána Tří králů - pozlacený relikviář uvnitř Kolínského dómu">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIE -->
+        <section id="galerie">
+            <div class="container">
+                <h2>Galerie</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="img/cathedral-main.jpg" alt="Kolínský dóm - pohled zepředu s oběma věžemi">
+                        <figcaption>Pohled na západní průčelí</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/cathedral-interior.jpg" alt="Interiér Kolínského dómu s gotickými oblouky a vitrážemi">
+                        <figcaption>Interiér hlavní lodi</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/cathedral-night.jpg" alt="Kolínský dóm v noci s odrazem v řece Rýn">
+                        <figcaption>Noční pohled přes řeku Rýn</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- KVÍZ -->
+        <section id="kviz">
+            <div class="container">
+                <h2>Kvíz - Otestujte se</h2>
+                <p>Kolik toho víte o Kolínském dómu? Odpovězte na otázky a zjistěte svůj výsledek.</p>
+
+                <form id="quiz-form">
+                    <div class="quiz-question">
+                        <p><strong>1. V kterém roce začala stavba katedrály?</strong></p>
+                        <label><input type="radio" name="q1" value="a"> 1148</label>
+                        <label><input type="radio" name="q1" value="b"> 1248</label>
+                        <label><input type="radio" name="q1" value="c"> 1348</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>2. Jaká je výška věží Kolínského dómu?</strong></p>
+                        <label><input type="radio" name="q2" value="a"> 127 m</label>
+                        <label><input type="radio" name="q2" value="b"> 157 m</label>
+                        <label><input type="radio" name="q2" value="c"> 187 m</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>3. Co je nejcennějším pokladem katedrály?</strong></p>
+                        <label><input type="radio" name="q3" value="a"> Korunovační klenoty</label>
+                        <label><input type="radio" name="q3" value="b"> Schrána Tří králů</label>
+                        <label><input type="radio" name="q3" value="c"> Svatý grál</label>
+                    </div>
+
+                    <button type="submit" class="btn">Vyhodnotit kvíz</button>
+                </form>
+
+                <div id="quiz-result" class="hidden"></div>
+            </div>
+        </section>
+
+        <!-- KONTAKT / FORMULÁŘ -->
+        <section id="kontakt">
+            <div class="container">
+                <h2>Napište nám</h2>
+                <p>Máte dotaz nebo chcete sdílet svůj zážitek z návštěvy? Napište nám.</p>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="jmeno">Jméno:</label>
+                        <input type="text" id="jmeno" name="jmeno" placeholder="Vaše jméno" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zprava">Zpráva:</label>
+                        <textarea id="zprava" name="zprava" rows="4" placeholder="Váš dotaz nebo zážitek..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Odeslat</button>
+                    <p id="form-message" class="hidden"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kolínský dóm | Školní projekt</p>
+            <p>Zdroje informací: <a href="https://www.koelner-dom.de" target="_blank" rel="noopener">koelner-dom.de</a> | <a href="https://cs.wikipedia.org/wiki/Kol%C3%ADnsk%C3%BD_d%C3%B3m" target="_blank" rel="noopener">Wikipedie</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

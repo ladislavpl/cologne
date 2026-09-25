@@ -1,0 +1,584 @@
+/* ===========================
+   RESET A ZÁKLADNÍ NASTAVENÍ
+   =========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background-color: #faf9f6;
+}
+
+a {
+    color: #8b6914;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===========================
+   KONTEJNER
+   =========================== */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===========================
+   HEADER A NAVIGACE
+   =========================== */
+
+header {
+    background-color: #1a1a2e;
+    color: #e0d6c8;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    color: #d4a843;
+    letter-spacing: 1px;
+}
+
+header .subtitle {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+nav ul li a {
+    color: #e0d6c8;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d4a843;
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+#menu-btn {
+    display: none;
+    background: none;
+    border: 2px solid #d4a843;
+    color: #d4a843;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#menu-btn:hover {
+    background-color: #d4a843;
+    color: #1a1a2e;
+}
+
+/* ===========================
+   HERO SEKCE
+   =========================== */
+
+.hero {
+    background-image: url('img/cathedral-main.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: rgba(26, 26, 46, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+.hero-overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #d4a843;
+}
+
+.hero-overlay p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* ===========================
+   TLAČÍTKA
+   =========================== */
+
+.btn {
+    display: inline-block;
+    background-color: #d4a843;
+    color: #1a1a2e;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #b8912e;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #d4a843;
+    color: #d4a843;
+}
+
+.btn-outline:hover {
+    background-color: #d4a843;
+    color: #1a1a2e;
+}
+
+/* ===========================
+   SEKCE – SPOLEČNÉ STYLY
+   =========================== */
+
+section {
+    padding: 60px 0;
+}
+
+section:nth-child(even) {
+    background-color: #f0ede6;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d4a843;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ===========================
+   TEXT S OBRÁZKEM
+   =========================== */
+
+.text-with-image {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.text-with-image article {
+    flex: 2;
+}
+
+.text-with-image article h3 {
+    color: #1a1a2e;
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+}
+
+.text-with-image article p {
+    margin-bottom: 12px;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #1a1a2e;
+    color: #e0d6c8;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #d4a843;
+}
+
+.info-box h3 {
+    color: #d4a843;
+    margin-bottom: 15px;
+}
+
+.info-box ul {
+    list-style: none;
+}
+
+.info-box ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-box ul li:last-child {
+    border-bottom: none;
+}
+
+.side-image {
+    flex: 1;
+}
+
+.side-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-with-image.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ===========================
+   KARTY
+   =========================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #d4a843;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   ROZBALITELNÝ OBSAH
+   =========================== */
+
+.expandable {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#detail-architektura {
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border-left: 4px solid #d4a843;
+}
+
+#detail-architektura p {
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   GALERIE
+   =========================== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery figure {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery figure img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.gallery figure:hover img {
+    transform: scale(1.05);
+}
+
+.gallery figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    background-color: #fff;
+}
+
+/* ===========================
+   KVÍZ
+   =========================== */
+
+#kviz {
+    background-color: #1a1a2e;
+    color: #e0d6c8;
+}
+
+#kviz h2 {
+    color: #d4a843;
+}
+
+#kviz h2::after {
+    background-color: #e0d6c8;
+}
+
+.quiz-question {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 3px solid #d4a843;
+}
+
+.quiz-question label {
+    display: block;
+    padding: 6px 0;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.quiz-question label:hover {
+    color: #d4a843;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#quiz-result.correct {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #81c784;
+    border: 2px solid #81c784;
+}
+
+#quiz-result.partial {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffd54f;
+    border: 2px solid #ffd54f;
+}
+
+#quiz-result.wrong {
+    background-color: rgba(244, 67, 54, 0.2);
+    color: #ef9a9a;
+    border: 2px solid #ef9a9a;
+}
+
+/* ===========================
+   KONTAKTNÍ FORMULÁŘ
+   =========================== */
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d4a843;
+}
+
+#form-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#form-message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #81c784;
+}
+
+#form-message.error {
+    background-color: #fce4ec;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+    background-color: #1a1a2e;
+    color: #999;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #d4a843;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* ===========================
+   RESPONZIVNÍ DESIGN
+   =========================== */
+
+@media (max-width: 768px) {
+    /* Navigace */
+    #menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header .subtitle {
+        display: block;
+        font-size: 0.8rem;
+        color: #999;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Layout */
+    .text-with-image,
+    .text-with-image.reverse {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
